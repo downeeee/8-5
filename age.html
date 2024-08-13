@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var current = new Date();
+        var currentYear = current.getFullYear();
+        var birthYear;
+        var age;
+        
+        birthYear = Number(prompt("태어난 년도를 입력하세요 YYYY"));
+        age = currentYear - birthYear ;
+
+        document.write(currentYear + "년 현재 <br>");
+        document.write(birthYear + "년에 태어난 사람의 나이는" + age + "세 입니다<br>");
+
+
+
+        // 태어난 년도 입력 받기
+        // 현재 년도
+        // 현재 년도 - 태어난 년도
+        // 결과
+        // 2024년 현재
+        // 1970년에 태어난 사람의 나이는 54 세 입니다
+
+    </script>
+
+
+</body>
+</html>

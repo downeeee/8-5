@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // alert("안녕하세요?");
+        // var reply = confirm("정말로 바꾸겠습니까?");
+
+        // var now = new Date();
+        // document.write(now + "<br>");
+        
+        // var year = now.getFullYear() //년도
+        // document.write(year + "년" + "<br>");
+
+
+        
+        // var mon = now.getMonth();  // 월 1(0)~ 12(11)
+        // document.write(mon + 1  + "월" + "<br>");
+
+        
+        // var d_day  = now.getDate(); //날짜 1~31
+        // document.write(d_day + "일" +"<br>");
+
+        // var day = now.getDay(); //요일  월요일 1 
+        // document.write(day + "<br>");
+
+        // switch(day){
+        //     case 1:
+        //         document.write("월요일") ; break;
+        //     case 2:
+        //         document.write("화요일") ; break;
+        //     case 3:
+        //         document.write("수요일") ; break;
+        //     case 4:
+        //         document.write("목요일") ; break;
+        //     case 5:
+        //         document.write("금요일") ; break;
+        //     case 6:
+        //         document.write("토요일") ; break;
+        //     case 7:
+        //         document.write("일요일") ; break;
+        // }
+
+
+        // var D_array = ["월" , "화" , "수" ,"목" , "금" , "토", "일"]
+        // document.write( D_array[day-1] +"요일")
+
+
+        // var hour = now.getHours();
+        // document.write(hour +  "시" + "<br>");
+
+        // var minu = now.getMinutes();
+        // document.write(minu +  "분" + "<br>");
+
+        // var sec = now.getSeconds();
+        // document.write(sec +  "초" + "<br>");
+
+        var now = new Date();
+        var display = now.toLocaleTimeString();
+        document.write("현재 시각은 " + display );
+
+
+
+
+    </script>
+</body>
+</html>

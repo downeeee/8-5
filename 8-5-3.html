@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script lang="java">
+
+        //함수만들기
+        function bmi(name,  weight ,  height){
+
+            bmi_res = weight / (height * height/10000);
+
+            if(bmi_res < 18.5){
+                bmi_test = "저체중";
+            }else if(bmi_res < 23){
+                bmi_test = "정상체중";
+            }else if(bmi_res < 25){
+                bmi_test = "과체중";
+            }else if(bmi_res < 30){
+                bmi_test = "경도비만";
+            }else if(bmi_res < 35){
+                bmi_test = "중도비만";
+            }else{
+                bmi_test = "고도비만";
+            }//
+
+            console.log(name + "님의 체질량 지수는 "  + bmi_res + "으로 "+ bmi_test + "입니다" );
+        }
+
+        // 저체중 : 18.5 미만
+        // 정상체중 : 18.5 이상 23 미만
+        // 과체중 : 23이상 25미만
+        // 경도비만 : 25이상 30미만
+        // 중도비만 : 30이상 35미만
+        // 고도비만 : 35이상
+
+
+
+
+        bmi("김길동" , 45.06 , 160); /*17.06156*/
+        bmi("이병헌" , 72.5 , 175);  /*23.6734*/
+        bmi("김태희" , 52.03 , 167); /*18.6561*/
+        bmi("홍길동" , 85.5 , 179);  /*26.68456*/
+
+        // 예)
+        // 김길동님의 체질량지수는          입니다
+
+
+
+    </script>
+    
+</body>
+</html>

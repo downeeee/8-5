@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{text-align: center; padding-top: 50px; }
+    </style>
+</head>
+<body>
+    <script>
+        (function(c,y){
+            sum =c+y;
+        }(100,200));
+        document.write(sum)
+
+        // var hi = function(){
+        //     return "안녕하세요"
+        // }//
+
+
+        
+
+        //화살표함수
+        var hi1 =() => {return "안녕하세요"}
+
+        var hi2 =() => "안녕하세요"
+
+        console.log(hi1());
+
+        let hi = ( i , j) => { return i + j}
+
+        console.log(hi(10,50))
+    </script>
+</body>
+</html>

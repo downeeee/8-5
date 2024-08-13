@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script lang="java">
+        // function mulit(x){
+        //     console.log( x * 500);
+        // }
+
+        // mulit(50);
+        // mulit(2);
+        // mulit(78);
+        // mulit(200);
+
+
+        function demo(x, y) {
+            console.log(x * y)
+        }
+        demo(10, 5);
+        demo(10, 3);
+        demo(5, 3);
+
+        // TB 를 입력 받아 몇 GB 
+        // 몇 MB 인지를 구하는 함수
+
+        // 8bit   = 1byte
+        // 1024byte  = 1KB
+        // 1024KB  = 1MB
+        // 1024Mb  = 1GB
+        // 1024GB  = 1TB
+
+
+
+
+
+
+        // 2 ^ 0 = 1
+        // 2
+        // 4
+        // 8
+        // 16 32 64 128 256 512 1024 2084
+
+        // 1MB = 1024KB
+        // 1GB = 1024MB
+        // 1TB = 1024GB
+
+
+        // 함수1 TB = GB
+
+        // 함수2  TB = MB
+
+        // 결과
+
+        // 2TB는   2*1024
+        // 2048GB입니다.
+
+        // 2TB는    2*1024*1024
+        // 2097152MB입니다.
+
+        const default_size = 1024;
+
+
+        function teraTogiga(Gdata) {
+
+            console.log(Gdata + "TB는");
+            console.log(Gdata * default_size + " GB 입니다");
+        }
+
+        function teraTomega(Mdata) {
+            console.log(Mdata + "TB는");
+            console.log(Mdata * default_size * default_size + " MB 입니다");
+        }
+
+        function tera(tdate){
+            console.log(tdate + "TB는");
+            console.log(tdate * default_size + " GB 입니다");
+            console.log(tdate + "TB는");
+            console.log(tdate * default_size * default_size + " MB 입니다");
+        }
+
+        teraTogiga(5);
+        teraTomega(3);
+
+        tera(2)
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script lang="java">
+
+        function rateCalc(myMoney, saveTerm , rate){
+           return myMoney * saveTerm * rate/100;             
+        }
+
+
+        let myMoney = 30000000 // 맡긴 금액(원금 원)
+        let saveTerm = 1 // 맡긴 기간(년)
+        let rate = 4; //(이자율 %)
+
+        // 이자 금액 = 맡긴금액(원) * 맡기 기간(년) * 이자율(%)/100
+
+        // 결과
+        // 맡긴 금액은 3000000원 입니다
+        // 이자는 150000원 입니다
+        // 최종 받을 금액은  30150000원 입니다
+
+        let myinterset = rateCalc(myMoney, saveTerm , rate);
+        let total = myMoney + myinterset;
+
+
+        // 출력테스트
+        console.log("맡긴 금액은 " + myMoney + "원 입니다");
+        console.log("이자는 " + myinterset +  "원 입니다");
+        console.log("최종 받을 금액은 " + total + "원 입니다" );
+
+        function sum(x ,y){
+            return x+y;
+        }
+        hap = sum(10, 5);
+        console.log(hap)
+
+
+
+    </script>
+    
+</body>
+</html>

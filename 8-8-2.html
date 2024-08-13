@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        #header{color: blue;}
+        #text{color: grey; font-size: 15px;}
+
+    </style>
+</head>
+<body>
+
+    <h1 id="header"> 자바스크립트</h1>
+    <p id="text"> 위의 텍스트를 클릭해 보세요</p>
+
+
+    <script lang="java">
+
+        var head = document.querySelector("#header");
+        
+        head.onclick = function(){
+            head.style.color ="red";
+        }
+
+
+    </script>
+</body>
+</html>

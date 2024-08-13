@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onclick="openWin()">문서를 열면 팝업 창이 표시됩니다</p>
+    <p onclick="closeWin()">팝업창 닫기</p>
+    
+    <script>
+        function openWin(){
+       mywin = window.open("8-12-3.html" , "_blank" , "width=500, height=400 , left=300 , top=200  ")
+    }
+
+    function closeWin(){
+        mywin.close();
+    }
+    </script>
+</body>
+</html>

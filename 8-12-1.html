@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .item{width: 800px; height: auto; padding: 15px 20px; border: 1px solid black; margin: 0 auto; position: relative;}
+
+        button{background-color: rgba(255, 255, 255, 0.7); padding: 5px; font-size: 0.8em;}
+
+        .over{position: absolute; left: 30px; bottom: 30px;}
+
+        .detail{width: 600px; text-align: left; line-height: 1.8; display: none;}
+    </style>
+
+    
+</head>
+
+<body>
+    <div class="item">
+        <img src="images/kayak.webp" alt="">
+        <button type="button" class="over" id="open" onclick="showDetail()">상세보기</button>
+
+        <div class="detail" id="desc">
+            <h4>설명</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa minima consequuntur ad voluptatibus quia
+                officiis unde officia blanditiis error ab! Necessitatibus numquam hic praesentium dignissimos ullam repellat
+                neque aspernatur voluptas?
+            </p>
+            <button type="button" class="close" onclick="hideDetail()">설명닫기</button>
+        </div>
+    </div>
+
+    <script lang="java">
+        function showDetail(){
+            document.querySelector(".detail").style.display ="block"
+            document.querySelector("#open").style.display ="none"
+        }
+
+        function hideDetail(){
+            document.querySelector(".detail").style.display ="block"
+            document.querySelector("#open").style.display ="none"
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="java">
+        var names = ["홍길동", "김길동"];        
+    </script>
+    
+    <h2>Array 연습</h2>
+    <script>
+        document.write(names[0]  + "<br>")
+        document.write(names[1] +  "<br>" )
+    </script>
+
+    <h2>arrey add</h2>
+    <script>
+
+        document.write(names.length + "<br>") // 2
+        
+        names.push("이길동");
+        document.write(names.length + "<br>") // 3
+
+        names.push("박길동");
+        document.write(names.length + "<br>") // 4
+        
+        document.write(names +"<br>") 
+        
+        names.unshift("신길동")
+        document.write(names.length + "<br>") // 5
+        document.write(names +"<br>") 
+        
+    </script>
+
+</body>
+</html>

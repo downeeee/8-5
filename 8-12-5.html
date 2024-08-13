@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>책읽기</h1>
+    <p>
+        <span class="accent" id="result"></span>
+        일 연속으로 <br>
+        책 읽기에 달성했군요
+    </p>
+
+    <script>
+        var now = new Date();
+        var firstDay = new Date("2024-01-01");
+
+        var toNow = now.getTime() ;
+
+        var toFirst = firstDay.getTime();
+
+        var passTime= toNow-toFirst ;
+
+        passTime = Math.round(passTime /(1000*60*60*24));
+
+        document.querySelector("#result").innerText = passTime;
+    </script>
+</body>
+</html>

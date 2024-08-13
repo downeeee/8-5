@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var name ="홍길동";
+        var member = ["kim", "Lee", "shin" ,"park", "choi"];
+        
+        member.push("NAM");
+
+        member.sort()//
+        member.reverse()//
+
+
+        
+        var count = member.length;
+        
+        document.write( member.length + "<br>");
+
+        for(var i=0; i < count ;  i++){
+
+            document.write(member[i].toUpperCase() + '<br>');
+
+            
+
+        }// for 
+
+
+
+
+        // document.write(member[0] + '<br>');
+        // document.write(member[1] + '<br>');
+        // document.write(member[2] + '<br>');
+        // document.write(member[3] + '<br>');
+
+        // var li = ["a", "b","c","d","e"];
+        // 
+        
+        // var li_count  = li.length;  
+        // document.write(li_count + "<br>"); //5
+
+        // li.push("f");
+        // document.write(li + "<br>");        
+        // li_count  = li.length;
+        // document.write(li_count + "<br>"); //6
+
+        // li = li.concat(["g","h"]);        
+        // document.write(li + "<br>");        
+        // li_count  = li.length;
+        // document.write(li_count + "<br>"); //8
+
+        // li.unshift("z");
+        // document.write(li + "<br>");        
+        // li_count  = li.length;
+        // document.write(li_count + "<br>"); //9
+        
+        // // z a "B" e f g h
+        
+        // li.splice(2, 0, "B")
+        // document.write(li + "<br>");        
+        // li_count  = li.length;
+        // document.write(li_count + "<br>"); //10
+
+        // var li_shi = li.shift();
+        // document.write(li_shi + "<br>");        
+        // document.write(li + "<br>");        
+        // li_count  = li.length;
+        // document.write(li_count + "<br>"); //9
+        
+        // li.pop();
+        // document.write(li + "<br>");        
+        // li_count  = li.length;
+        // document.write(li_count + "<br>"); //9
+
+        var str1 = "red";
+        var str2 = "BLUE";
+        var str3 = "redBLUE";
+
+        function is_Low( str ){
+            return str === str.toUpperCase();
+        }
+
+        document.write(is_Low(str1) + "<br>")
+        document.write(is_Low(str2) + "<br>")
+        document.write(is_Low(str3) + "<br>")
+        
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

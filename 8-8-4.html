@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            border: 1px solid red;
+            margin: 15px;
+            padding: 30px;
+            line-height: 2;
+        }
+
+        div h3{text-align: center; color: red;}
+    </style>
+</head>
+<body>
+
+    <h1>구구단</h1>
+
+    <script>
+        var i, j;
+
+        for( i = 1 ; i<=9 ;  i++){
+            document.write("<div>");
+
+            document.write("<h3>"+  i  + "단</h3>") ;
+
+            for(j=1; j<=9 ; j++){
+                document.write( i + " X " + j  + "= " +  i*j +"<br>");
+            }//j
+            document.write("</div>");
+
+        }// i
+
+        // 삼항연산자
+        // if(조건식){
+        //     참
+        // }else{
+        //     거짓
+        // }
+
+        // 조건식 ? 조건식에참일때 : 거짓일때 ;
+
+        let a =10;
+        let b = 3;
+
+        if( a > b) {
+            document.write("참");
+        }else{
+            document.write("거짓");
+        }
+
+
+        var value = (a > b) ?  "참" : "거짓";
+        document.write(value)
+
+
+    </script>
+    
+</body>
+</html>

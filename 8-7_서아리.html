@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <script src="script/"></script>
+    <style type="text/css">
+        .box {
+            width: 1000px;
+            height: 300px;
+            margin: 100px auto;
+            /* background-color: green; */
+            border: 1px solid red;
+            position: relative;
+            /* overflow: hidden; */
+        }
+
+        .box div {
+            width: 500px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            /* transition: all 0.3s; */
+            /* opacity:0; */
+            /* display: none; */
+        }
+
+        .box #box1 {
+            left: -100%;
+            background-color: orange;
+        }
+
+        .box #box2 {
+            right: -100%;
+            background-color: red
+        }
+
+        .box #box3 {
+            left: -100%;
+            background-color: greenyellow;
+        }
+
+        .box #box4 {
+            right: -100%;
+            background-color: aqua;
+
+        }
+    </style>
+
+    <script>
+        $(function () {
+            var images = $(".box .box_b");
+            console.log(images.length)
+
+            // ani_img(0);
+
+            // var k = function ani_img(index){
+
+            //     if( index >= images.length ){
+            //         index = 0;                    
+            //     }                 
+
+            // }//
+
+            // i = 0;
+
+            // setInterval(function(){
+            //     j=0;
+            //     if(j % 2 == 0 ){
+
+            //     }else{
+
+            //     }
+
+            // }, 3000)
+
+            images.eq(0).animate({left: "0"}, 1000).delay(2000).animate({left: "-100%"}, 1000, function () {
+                $(this).css({left:"0"}) })
+
+            // images.eq(1).css({display: "block, right : 100%"}).animate({right: "0"}, 1000).delay(4000).animate({right: "-100%"}, 1000, function () {
+            //     $(this).css({right:"0"})  });
+
+
+
+            // images.eq(2).css({display: "block, left : 100%"}).animate({left: "0"}, 1000).delay(6000).animate({left: "-100%"}, 1000, function () {
+            //     $(this).css({left:"0"}) });
+
+            // images.eq(3).css({display: "block, right : 100%"}).animate({right: "0"}, 1000).delay(8000).animate({right: "-100%"}, 1000, function () {
+            //     $(this).css({right:"0"})  });
+
+
+
+
+            // function ani(){
+            //     console.log("i : " ,i);
+            //     images.eq(0).css({
+            //         display: "block, left : 100%"
+            //     }).animate({
+            //         left: "0"
+            //     }, 1000).delay(2000).animate({
+            //         left: "-100%"
+            //     }, 1000, function () {
+            //         $(this).css({
+            //             left:"0"
+            //         });
+            //     }) //
+
+            // setInterval(function () {
+            //     if (i >= images.length-1) {
+            //         i = 0;
+            //     } else {
+            //         i++
+            //     }
+
+            //     console.log("i : " ,i);
+            //     images.eq(i).css({
+            //         display: "block, left : 100%"
+            //     }).animate({
+            //         left: "0"
+            //     }, 1000).delay(2000).animate({
+            //         left: "-100%"
+            //     }, 1000, function () {
+            //         $(this).css({
+            //             left:"0"
+            //         });                    
+            //     }) //
+            // }, 3000)
+            // }
+
+            // setInterval(ani, 3000)
+
+
+
+            // var currentImage = $(images[k]);
+            // console.log("k : " , k)
+
+            // currentImage.css({display : "block, left : 100%"}).animate({left:"0"}, 1000).delay(2000).animate({left:"-100%"}, 1000, function(){$(this).css({display: "none"});
+            //     ani_img(index+1);
+            // })//
+
+
+
+
+        }) //
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box_b" id="box1">1</div>
+        <div class="box_b" id="box2">2</div>
+        <div class="box_b" id="box3">3</div>
+        <div class="box_b" id="box4">4</div>
+    </div>
+</body>
+
+</html>
